@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from 'react';
 
+import Meal from './components/Meal';
 import './App.css';
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
 
       const data = await response.json();
       const meal = data.meals[0];
-      console.log(meal)
+      // console.log(meal)
 
       const trimmedMealObj = {};
 
@@ -26,7 +27,9 @@ function App() {
           trimmedMealObj[`${property}`] = `${meal[property]}`;
         }
       }
-      console.log(trimmedMealObj);
+      // console.log(trimmedMealObj);
+      setMeal(trimmedMealObj);
+      // console.log(meal)
 
     }  catch (error) {
       console.log(error.message)
@@ -35,8 +38,11 @@ function App() {
 
   return (
     <div className="App">
-      <h2>This is the mealAPI app</h2>
-      <button onClick={fetchMealHandler}>Click for new recipe!</button>
+      <section>
+        <h1>This is the mealAPI app</h1>
+        <button onClick={fetchMealHandler}>Click for new recipe!</button>
+      </section>
+      <Meal meal={meal}/>
     </div>
   );
 }
