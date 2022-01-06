@@ -17,20 +17,8 @@ function App() {
 
       const data = await response.json();
       const meal = data.meals[0];
-      // console.log(meal)
 
-      const trimmedMealObj = {};
-
-      for ( const property in meal ) {
-        if (`${meal[property]}`) {
-          //console.log(`${property} `, `${meal[property]} ` )
-          trimmedMealObj[`${property}`] = `${meal[property]}`;
-        }
-      }
-      // console.log(trimmedMealObj);
-      setMeal(trimmedMealObj);
-      // console.log(meal)
-
+      setMeal(meal);
     }  catch (error) {
       console.log(error.message)
     }
