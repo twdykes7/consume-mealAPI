@@ -3,6 +3,7 @@ import React from 'react';
 import MealIngredients from './MealIngredients';
 import MealThumbnail from './MealThumbnail';
 import MealInstructions from './MealInstructions';
+import VideoPlayer from './VideoPlayer';
 
 const Meal = (props) => {
   const meal = props.meal;
@@ -24,13 +25,18 @@ const Meal = (props) => {
         <section>
           <MealIngredients items={meal} />
         </section>
-        <section href={meal.strYoutube}></section>
+        <center>
+          <VideoPlayer url={meal.strYoutube}/>
+        </center>
+        <section>
+          <a href={meal.strSource}>Click for the original recipe link</a>
+        </section>
       </div>
     )
   }
 
   return (
-    <p>Thanks for visiting!</p>
+    <div></div>
   )
 };
 
