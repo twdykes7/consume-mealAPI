@@ -2,33 +2,35 @@ import React from 'react';
 
 import MealIngredients from './MealIngredients';
 import MealThumbnail from './MealThumbnail';
+import MealInstructions from './MealInstructions';
 
 const Meal = (props) => {
   const meal = props.meal;
 
   console.log(meal)
-  let content = <p></p>
-  let thumbnail = <p></p>
 
   if(meal) {
-    content = <div>
-      <h2>{meal.strMeal}</h2>
-    </div>;
-    thumbnail = <MealThumbnail image={meal.strMealThumb}/>;
+    return (
+      <div>
+        <section>
+          <MealThumbnail image={meal.strMealThumb}/>
+        </section>
+        <section>
+          <h2>{meal.strMeal}</h2>
+        </section>
+        <section>
+          <MealInstructions instructions={meal.strInstructions} />
+        </section>
+        <section>
+          <MealIngredients items={meal} />
+        </section>
+        <section href={meal.strYoutube}></section>
+      </div>
+    )
   }
 
   return (
-    <div>
-      <section>
-        {thumbnail}
-      </section>
-      <section>
-        {content}
-      </section>
-      <section>
-        <MealIngredients items={meal} />
-      </section>
-    </div>
+    <p>Thanks for visiting!</p>
   )
 };
 

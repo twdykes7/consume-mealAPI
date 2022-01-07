@@ -1,4 +1,7 @@
 import React from 'react'
+/**
+At some point need to set styling for thumbnail image
+ */
 
 const MealThumbnail = (props) => {
 
