@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <section>
-        <h1>This is the mealAPI app</h1>
+        <h1>Welcome to a random meal generator app!</h1>
         <button onClick={fetchMealHandler}>Click for new recipe!</button>
       </section>
       <Meal meal={meal}/>
