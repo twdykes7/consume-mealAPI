@@ -1,6 +1,7 @@
 .meal-img {
   width: 80%;
   padding: 0.5rem 1.5rem;
+  border-radius: 8%;
 }
 
 @media (min-width: 768px) {

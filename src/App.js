@@ -31,9 +31,9 @@ function App() {
 
   return (
     <div className="App">
-      <section>
+      <section className="title">
         <h1>Welcome to a random meal generator app!</h1>
-        <button onClick={fetchMealHandler}>Click for new recipe!</button>
+        <button onClick={fetchMealHandler} className="button">Click for new recipe!</button>
       </section>
       <section>
         <Meal meal={meal}/>
