@@ -19,6 +19,7 @@ const Meal = (props) => {
         </section>
         <section>
           <h2>{meal.strMeal}</h2>
+          <h3 className="origin">This is originally a {meal.strArea} meal</h3>
         </section>
         <section>
           <MealIngredients items={meal} />
