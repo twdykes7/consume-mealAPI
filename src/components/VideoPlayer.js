@@ -7,9 +7,10 @@ const VideoPlayer = (props) => {
 
   return (
     <center>
+      {props.url &&
       <ReactPlayer
-        url={props.url} className="react-player"
-      />
+      url={props.url} className="react-player"
+    />}
     </center>
   )
 };
