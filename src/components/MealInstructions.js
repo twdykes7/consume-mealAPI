@@ -16,12 +16,15 @@ const MealInstructions = (props) => {
 
   return (
     <div className="instructions">
-      {split.map(step => {
-        return (
-          step ? <li>{step}</li> : <p></p>)
-      })}
+      <h2 className="title">Instructions</h2>
+      <div>
+        {split.map(step => {
+          return (
+            step ? <li>{step}</li> : <p></p>)
+        })}
+      </div>
     </div>
   )
 };
-//<p>{props.instructions}</p>
+
 export default MealInstructions;
