@@ -4,3 +4,10 @@
   font-size: 23px;
   text-align: left;
 }
+li {
+  padding-bottom: 1px;
+}
+
+h2 {
+  text-align: center;
+}

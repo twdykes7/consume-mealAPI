@@ -21,3 +21,8 @@ a:hover {
 p {
   font-size: 23px;
 }
+
+.origin {
+  font-size: 21px;
+  padding: 1px;
+}
