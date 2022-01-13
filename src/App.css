@@ -9,5 +9,12 @@
 .button {
   background-color: beige;
   border-color: turquoise;
-  border-radius: 60%;
+  border-radius: 57%;
+  color: orangered;
+  padding: 0.5%;
+}
+
+.button:hover {
+  font-weight: bold;
+  font-style: italic;
 }

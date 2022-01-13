@@ -7,13 +7,17 @@ a {
 }
 
 a:link {
-  color: mediumturquoise;
+  color: salmon;
   text-decoration: none;
 }
 
 a:hover {
-  color: salmon;
-  text-decoration: underline salmon;
+  color: mediumturquoise;
+  text-decoration: underline mediumturquoise;
   font-weight: bold;
   font-style: italic;
+}
+
+p {
+  font-size: 23px;
 }
