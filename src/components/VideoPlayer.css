@@ -1,5 +1,7 @@
 .react-player {
-  width: 80%;
+  max-width: 90%;
+  height: auto;
+  padding: 10px 15px;
   /* position: relative; */
 }
 
