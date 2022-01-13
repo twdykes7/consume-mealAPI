@@ -1,10 +1,10 @@
 .react-player {
-  position: relative;
-  align-items: center;
+  width: 80%;
+  /* position: relative; */
 }
 
 @media (min-width: 768px) {
-  .player {
+  .react-player {
     width: auto;
   }
 }

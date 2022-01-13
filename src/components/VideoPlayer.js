@@ -6,9 +6,11 @@ import './VideoPlayer.css';
 const VideoPlayer = (props) => {
 
   return (
-    <ReactPlayer
-      url={props.url} className="react-player"
-    />
+    <center>
+      <ReactPlayer
+        url={props.url} className="react-player"
+      />
+    </center>
   )
 };
 
