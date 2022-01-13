@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './MealIngredients.css';
+
 const MealIngredients = (props) => {
   const ingredientType = [];
   const ingredientAmt = [];
@@ -29,7 +31,7 @@ const MealIngredients = (props) => {
 
   if (ingredientList.length > 0) {
     content = <div>
-    <h3>Ingredients</h3>
+    <h3 className="ingredients">Ingredients</h3>
     <p>{ingredientList}</p>
   </div>
   }

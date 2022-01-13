@@ -1,9 +1,13 @@
 import React from 'react';
 
+import './MealInstructions.css';
+
 const MealInstructions = (props) => {
 
   return (
-    <p>{props.instructions}</p>
+    <div className="instructions">
+      <p>{props.instructions}</p>
+    </div>
   )
 };
 
