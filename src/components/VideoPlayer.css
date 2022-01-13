@@ -1,0 +1,10 @@
+.react-player {
+  position: relative;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .player {
+    width: auto;
+  }
+}

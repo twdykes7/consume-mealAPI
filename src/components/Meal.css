@@ -1,0 +1,15 @@
+a {
+  padding: 1rem 1.5rem;
+}
+
+a:link {
+  color: mediumturquoise;
+  text-decoration: none;
+}
+
+a:hover {
+  color: salmon;
+  text-decoration: underline salmon;
+  font-weight: bold;
+  font-style: italic;
+}

@@ -1,19 +1,14 @@
 import React from 'react';
 import ReactPlayer from 'react-player/youtube';
 
+import './VideoPlayer.css';
+
 const VideoPlayer = (props) => {
 
-  console.log(props.url)
-  console.log(window.location.href)
-  // return (
-  //   <div>{props.url}</div>
-  // )
   return (
-    <div>
-      <ReactPlayer
-        url={props.url}
-      />
-    </div>
+    <ReactPlayer
+      url={props.url} className="react-player"
+    />
   )
 };
 

@@ -4,6 +4,11 @@ import Meal from './components/Meal';
 import './App.css';
 
 function App() {
+
+  /* ToDo
+  Add isLoading with useState
+  */
+
   const [meal, setMeal] = useState(null);
 
   const fetchMealHandler = useCallback( async () => {
@@ -30,7 +35,9 @@ function App() {
         <h1>Welcome to a random meal generator app!</h1>
         <button onClick={fetchMealHandler}>Click for new recipe!</button>
       </section>
-      <Meal meal={meal}/>
+      <section>
+        <Meal meal={meal}/>
+      </section>
     </div>
   );
 }
