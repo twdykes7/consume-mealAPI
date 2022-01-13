@@ -36,7 +36,9 @@ function App() {
         <button onClick={fetchMealHandler} className="button">Click for new recipe!</button>
       </section>
       <section>
-        <Meal meal={meal}/>
+        {meal ? <Meal meal={meal}/> :
+          <p>This app will generate a random meal evertime the button is clicked!</p>
+        }
       </section>
     </div>
   );
