@@ -1,8 +1,5 @@
-# To see the deployed app visit
-
-https://twdykes7.github.io/consume-mealAPI/ 
-
-^ This project is deployed on github pages ^
+## Description
+This application displays a random recipe
 
 ## To get started
 
@@ -29,3 +26,9 @@ https://twdykes7.github.io/consume-mealAPI/
 [https://create-react-app.dev/docs/getting-started](https://create-react-app.dev/docs/getting-started)
 
 [https://www.themealdb.com/api.php](https://www.themealdb.com/api.php)
+
+## To see the deployed app visit
+
+https://twdykes7.github.io/consume-mealAPI/ 
+
+^ This project is deployed on github pages ^
