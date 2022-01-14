@@ -23,7 +23,9 @@ https://twdykes7.github.io/consume-mealAPI/
 </p>
 
 
+## Credit
+#### This app was created with create react app and using the mealAPI
 
-#### This app was created with create react app
+[https://create-react-app.dev/docs/getting-started](https://create-react-app.dev/docs/getting-started)
 
-You can check it out here [https://create-react-app.dev/docs/getting-started](https://create-react-app.dev/docs/getting-started)
+[https://www.themealdb.com/api.php](https://www.themealdb.com/api.php)
