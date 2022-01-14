@@ -9,8 +9,6 @@ import './Meal.css';
 const Meal = (props) => {
   const meal = props.meal;
 
-  console.log(meal)
-
   if(meal) {
     return (
       <div className="meals">

@@ -12,16 +12,17 @@ const MealInstructions = (props) => {
   }
 
   let split = props.instructions.split(whereToSplit)
-  console.log(split)
+
+  let instructionsList = split.map((step, index) => {
+    return (
+      step ? <li key={index}>{step}</li> : <p></p>)
+  })
 
   return (
     <div className="instructions">
       <h2 className="title">Instructions</h2>
       <div>
-        {split.map(step => {
-          return (
-            step ? <li>{step}</li> : <p></p>)
-        })}
+        {instructionsList}
       </div>
     </div>
   )
