@@ -10,6 +10,10 @@ const Meal = (props) => {
   const meal = props.meal;
   //console.log(meal);
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  }
+
   if(meal) {
     return (
       <div className="meals">
@@ -18,7 +22,7 @@ const Meal = (props) => {
         </section>
         <section>
           <h2>{meal.strMeal}</h2>
-          <h3 className="origin">This is originally a {meal.strArea} meal</h3>
+          <h3 className="origin">This is a {meal.strArea} meal</h3>
         </section>
         <section>
           <MealIngredients items={meal} />
@@ -31,6 +35,9 @@ const Meal = (props) => {
         </section>
         <section>
           <a href={meal.strSource}>Click for the original recipe link</a>
+        </section>
+        <section>
+          <button id="scroll-button" className="button" onClick={scrollToTop}>Return to top</button>
         </section>
       </div>
     )
