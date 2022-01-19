@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/consume-mealAPI/static/css/main.e9368dbc.css",
-    "main.js": "/consume-mealAPI/static/js/main.a870745a.js",
+    "main.js": "/consume-mealAPI/static/js/main.9134cfab.js",
     "static/js/787.0202e1ca.chunk.js": "/consume-mealAPI/static/js/787.0202e1ca.chunk.js",
     "index.html": "/consume-mealAPI/index.html",
     "main.e9368dbc.css.map": "/consume-mealAPI/static/css/main.e9368dbc.css.map",
-    "main.a870745a.js.map": "/consume-mealAPI/static/js/main.a870745a.js.map",
+    "main.9134cfab.js.map": "/consume-mealAPI/static/js/main.9134cfab.js.map",
     "787.0202e1ca.chunk.js.map": "/consume-mealAPI/static/js/787.0202e1ca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e9368dbc.css",
-    "static/js/main.a870745a.js"
+    "static/js/main.9134cfab.js"
   ]
 }
