@@ -10,8 +10,10 @@ function App() {
   */
 
   const [meal, setMeal] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   const fetchMealHandler = useCallback( async () => {
+    setIsLoading(true);
 
     try {
       const response = await fetch("https://www.themealdb.com/api/json/v1/1/random.php");
@@ -27,7 +29,9 @@ function App() {
     }  catch (error) {
       console.log(error.message)
     }
+    setIsLoading(false);
   }, []);
+
 
   return (
     <div className="App">
