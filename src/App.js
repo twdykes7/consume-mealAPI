@@ -32,6 +32,10 @@ function App() {
     setIsLoading(false);
   }, []);
 
+  let mealContent = <p>Loading!</p>
+  if (!isLoading) {
+    mealContent = <Meal meal={meal}/>
+  }
 
   return (
     <div className="App">
@@ -40,7 +44,7 @@ function App() {
         <button onClick={fetchMealHandler} className="button">Click for new recipe!</button>
       </section>
       <section>
-        {meal ? <Meal meal={meal}/> :
+        {meal ? mealContent :
           <p>This app will generate a random meal evertime the button is clicked!</p>
         }
       </section>
