@@ -5,8 +5,6 @@ import './MealIngredients.css';
 const MealIngredients = (props) => {
   const ingredientType = [];
   const ingredientAmt = [];
-  const ingredientArr = [];
-
   const items = props.items;
 
   for (const property in items) {
