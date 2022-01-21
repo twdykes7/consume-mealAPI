@@ -8,23 +8,23 @@ const MealIngredients = (props) => {
   const items = props.items;
 
   for (const property in items) {
-    if (items[property] !== null && items[property].length > 1){
-      if(property.includes('Ingredient')) {
+    if (items[property] !== null && items[property].length > 0){
+      if(property.includes('strIngredient')) {
         ingredientType.push(items[property]);
       }
-      if(property.includes('Measure')) {
+      else if(property.includes('strMeasure')) {
         ingredientAmt.push(items[property]);
       }
     }
   }
 
   const ingredientList = ingredientType.map((item, index) => {
-    return <li key={index} className="ingredient-item">
-      <span className="ingredient-type">{item}</span>
-      <span>-</span>
-      <span className="ingredient-amt">{ingredientAmt[index]}</span>
-    </li>
-  })
+    return (ingredientAmt[index] !== 'undefined' ? <li key={index} className="ingredient-item">
+    <span className="ingredient-type">{item}</span>
+    <span>-</span>
+    <span className="ingredient-amt">{ingredientAmt[index]}</span>
+  </li> : <span className="ingredient-type">{item}</span>
+  )})
 
   let content = <p></p>
 
