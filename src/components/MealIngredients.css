@@ -2,3 +2,18 @@
   border: 5px solid turquoise;
   font-size: 23px;
 }
+
+.ingredient-item {
+  text-align: left;
+  padding: 2px;
+}
+
+.ingredient-type {
+  text-align: left;
+  padding-right: 10px;
+}
+
+.ingredient-amt {
+  text-align: center;
+  padding-left: 10px;
+}

@@ -19,13 +19,14 @@ const MealIngredients = (props) => {
       }
     }
   }
-  for(var i = 0; i < ingredientType.length; i++) {
-    let tempBlock = ingredientType[i] + ' ' + ingredientAmt[i];
-    ingredientArr.push(tempBlock);
-  }
 
-  const ingredientList = ingredientArr.map((item, index) => {
-    return <li key={index}>{item}</li>})
+  const ingredientList = ingredientType.map((item, index) => {
+    return <li key={index} className="ingredient-item">
+      <span className="ingredient-type">{item}</span>
+      <span>-</span>
+      <span className="ingredient-amt">{ingredientAmt[index]}</span>
+    </li>
+  })
 
   let content = <p></p>
 
