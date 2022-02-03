@@ -8,7 +8,6 @@ import './Meal.css';
 
 const Meal = (props) => {
   const meal = props.meal;
-  //console.log(meal);
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);

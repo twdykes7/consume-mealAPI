@@ -12,7 +12,7 @@ const MealThumbnail = (props) => {
   let content = <p></p>;
 
   if(image) {
-    content = <img src={image} className="meal-img" alt="meal" />
+    content = <img src={image} className="meal-img" alt="This is a meal" />
   }
   return (
     <div>

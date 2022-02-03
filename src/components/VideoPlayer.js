@@ -9,7 +9,7 @@ const VideoPlayer = (props) => {
     <center>
       {props.url &&
       <ReactPlayer
-      url={props.url} className="react-player"
+      url={props.url} className="react-player" alt="This is a video showing how to prepare this recipe"
     />}
     </center>
   )
